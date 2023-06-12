@@ -1,0 +1,179 @@
+@font-face{
+    font-family: myFirstFont;
+    src: url(./fonts/Pistachio-K71w7.otf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: myFirstFont;
+    background-color: #fff4f8;
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-padding1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.divider{
+    width: 200px;
+    height: 2px;
+    background-color:#ffb6e2 ;
+    border-radius: 10%;
+}
+.btn-brand{
+    color: #ffb6e2;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid #ffbae4;
+}
+.shadow-hover{
+    transition: all 0.5s;
+}
+.shadow-hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+nav{
+    background-color: #905E96;
+    margin: 20px 20px;
+    border-radius: 7px;
+    font-size: 20px;
+
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #FF99D7;
+}
+#home{
+    background-image: url(./images/cover3.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.overlay{
+    position: relative;
+    z-index: 2;
+}
+.overlay::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+.stars i{
+    color: #905E96;
+}
+.social i{
+    color: white;
+}
+.member-info-content h3{
+    color: white;
+} 
+.chefs .member {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #343a40;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .chefs .member .member-info {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+  }
+  
+  .chefs .member .member-info-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    transition: bottom 0.4s;
+  }
+  
+  .chefs .member .member-info-content h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .chefs .member .member-info-content span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  .chefs .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    right: 0;
+    height: 48px;
+    transition: bottom ease-in-out 0.4s;
+    text-align: center;
+  }
+  
+  .chefs .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .chefs .member .social a:hover {
+    color: #cda45e;
+  }
+  
+  .chefs .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+  
+  .chefs .member:hover .member-info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 1;
+    transition: 0.4s;
+  }
+  
+  .chefs .member:hover .member-info-content {
+    bottom: 60px;
+    transition: bottom 0.4s;
+  }
+  
+  .chefs .member:hover .social {
+    bottom: 0;
+    transition: bottom ease-in-out 0.4s;
+  }
+  
